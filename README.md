@@ -1,15 +1,39 @@
 # blog
-## Configuration TypeScript
 
-Ce projet utilise TypeScript pour améliorer la sécurité des types et faciliter le développement. Suivez ces étapes pour configurer l'environnement de développement.
+### Install the vscode docker addon
 
-### 1. Installation de TypeScript
+1. add folder to vscode workspace
+2. recreate your docker compose docker-compose up --force-recreate --build
+ 
+ 
+### Docker configuration and installation 
+    
+1. prerequisites:
+- wsl installer
+- docker installer
+- vsc installer
+- dockerfil and docker compose files
+- package.json
+2. install the docker addon on visual studio code
+3. create a new project in visual studio using the project folder as workspace
+4. to add the image using the dockerfile and compose in visual studio run this command on powershell: "docker-compose up " wait for installation to complete. 
+5. To launch the container run this command on powershell "docker-compose run or in the docker vsc explorer, right-click then run on the container.
+6. To stop the container, either press "ctrl c" in the docker terminal, or execute the command "docker-compose stop" on powershell: "docker-compose stop
+                              
+Additional information: the blog and database user connection variables are in the docker compose file, as are the ports affiliated with each service. 
+
+### Configuration TypeScript
+
+This project uses TypeScript to improve type security and facilitate development. Follow these steps to configure the development environment.
+
+1. TypeScript installation
 
 ```bash
 npm install typescript --save-dev
+```
 
-2. Création du fichier tsconfig.json
-Créez un fichier tsconfig.json à la racine du projet avec le contenu suivant :
+2. Create tsconfig.json file
+Create a tsconfig.json file in the project root with the following contents:
 
 ```json
 Copy code
@@ -26,24 +50,27 @@ Copy code
   "include": ["src/**/*.ts"],
   "exclude": ["node_modules"]
 }
+```
 
-3. Transpiler TypeScript
-Exécutez le script de construction pour transpiler le code TypeScript en JavaScript.
+3. Transpile TypeScript
+Run the build script to transpile the TypeScript code into JavaScript.
 
 ```bash
 npm run build
+```
 
-4. Linter et Formateur de Code
-Utilisez ESLint avec TypeScript et Prettier pour le linting et le formatage du code.
+4. Linter and Code Formatter
+Use ESLint with TypeScript and Prettier for code linting and formatting.
 
-bash
-Copy code
+```bash
 npm install eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin --save-dev
-5. Définitions de Types
-Configurez des définitions de types TypeScript pour les bibliothèques tierces.
+```
 
-6. Scripts de Construction et Linting
-Utilisez les scripts suivants dans le fichier package.json :
+5. Type definitions
+Configure TypeScript type definitions for third-party libraries.
+
+6. Build and Linting scripts
+Use the following scripts in the package.json file:
 
 ```json
 
@@ -51,21 +78,23 @@ Utilisez les scripts suivants dans le fichier package.json :
   "build": "tsc",
   "lint": "eslint src --fix"
 }
+```
 
-7. Mode de Surveillance (Watch Mode)
-Pour un développement continu, utilisez le mode de surveillance.
+7. Watch Mode
+For continuous development, use watch mode.
 
 ```bash
 npm run build:watch
+```
 
-Ajouter des Informations Supplémentaires
+Add additional information
 
-Ajoutez d'autres détails spécifiques à votre projet, tels que des conventions de nommage, des recommandations pour les outils supplémentaires, etc.
+Add other details specific to your project, such as naming conventions, recommendations for additional tools, etc.
 
-Ajouter des Instructions pour les Collaborateurs
+Add Instructions for Collaborators
 
-Incluez des instructions sur la manière dont les membres de l'équipe peuvent contribuer au projet, en tenant compte de la configuration TypeScript.
+Include instructions on how team members can contribute to the project, taking into account the TypeScript configuration.
 
-Mettre à Jour au Besoin
+Update as required
 
-Mettez à jour le fichier README.md au fur et à mesure que votre configuration évolue ou que de nouvelles informations sont ajoutées.
+Update the README.md file as your configuration evolves or new information is added.
