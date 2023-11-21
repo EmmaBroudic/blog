@@ -1,24 +1,19 @@
 # blog
-
-### Install the vscode docker addon
+ 
+### Docker configuration and installation
 
 1. add folder to vscode workspace
-2. recreate your docker compose docker-compose up --force-recreate --build
- 
- 
-### Docker configuration and installation 
-    
-1. prerequisites:
+2. prerequisites:
 - wsl installer
 - docker installer
 - vsc installer
 - dockerfil and docker compose files
 - package.json
-2. install the docker addon on visual studio code
-3. create a new project in visual studio using the project folder as workspace
-4. to add the image using the dockerfile and compose in visual studio run this command on powershell: "docker-compose up " wait for installation to complete. 
-5. To launch the container run this command on powershell "docker-compose run or in the docker vsc explorer, right-click then run on the container.
-6. To stop the container, either press "ctrl c" in the docker terminal, or execute the command "docker-compose stop" on powershell: "docker-compose stop
+3. install the docker addon on visual studio code
+4. create a new project in visual studio using the project folder as workspace
+5. to add the image using the dockerfile and compose in visual studio run this command on powershell: "docker-compose up " wait for installation to complete. 
+6. To launch the container run this command on powershell "docker-compose run or in the docker vsc explorer, right-click then run on the container.
+7. To stop the container, either press "ctrl c" in the docker terminal, or execute the command "docker-compose stop" on powershell: "docker-compose stop
                               
 Additional information: the blog and database user connection variables are in the docker compose file, as are the ports affiliated with each service. 
 
