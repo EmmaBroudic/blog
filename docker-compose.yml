@@ -12,7 +12,6 @@ services:
     volumes:
       - db:/var/lib/postgres
       - ./database/SQL/:/docker-entrypoint-initdb.d/
-      
   app:
     depends_on:
       - postgresdb
