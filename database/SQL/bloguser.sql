@@ -1,4 +1,4 @@
-CREATE TABLE "user" (
+CREATE TABLE "bloguser" (
     User_ID SERIAL PRIMARY KEY,
     User_Surname VARCHAR(50),
     User_First_Name VARCHAR(50),
