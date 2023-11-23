@@ -12,13 +12,13 @@ h1 {
     font-weight: bold;
     position: relative;
     text-align: center;
+    right: 150px;
 }
 
-a {
-    text-decoration: none;
+.link {
     display: inline-flex;
     flex-direction: row-reverse;
     position: relative;
-    left: 200px;
-    
+    left: 400px;
+    text-decoration: none;
 }
