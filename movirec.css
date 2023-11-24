@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Add these styles to your movirec.css file */
 
 #entete {
@@ -88,4 +89,29 @@ footer {
     background-color: #CC4040;
     padding:40px 10px;
     color: white;
+=======
+img {
+    width: 200px;
+    height: auto;
+    border-radius: 70px;
+    display: block;
+    position: relative;
+    bottom: 130px;
+}
+
+h1 {
+    font-size: 70px;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+    right: 150px;
+}
+
+.link {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    position: relative;
+    left: 400px;
+    text-decoration: none;
+>>>>>>> d277eee84594f4d8861dd2f6160d3fc071339a44
 }
