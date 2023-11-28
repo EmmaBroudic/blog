@@ -37,7 +37,11 @@ services:
       - DB_PORT=5432
     stdin_open: true
     tty: true
+    volumes:
+      - ./src/register.pug:/app/src/register.pug
 
+  
+   
 volumes: 
   db:
   
