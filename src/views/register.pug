@@ -7,28 +7,9 @@ html
     meta(charset='UTF-8')
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     block styles
-      link(rel="stylesheet", type="text/css", href="./styles/header.css")
-      link(rel="stylesheet", type="text/css", href="./styles/register.css")  
+      link(rel='stylesheet', type='text/css', href="./styles/register.css")  
   body
-    header(class='header')
-      div(class='title')
-        img(class='img',src='./styles/image/film.png', alt='Logo')
-        h1 MOVIREC
-      
-        
-      a.link_in(href="Sign.html", target="_blank") Sign in
-      a.link_up(href="login.html", target="_blank") Sign up
-
-      hr
-
-    nav
-      a(href="article.html", target="_blank") ARTICLES 
-      a(href="article.html", target="_blank")  MOVIES REVIEWS
-      a(href="article.html", target="_blank") INTERVIEWS
-      a(href="article.html", target="_blank") CONTEST
-      a(href="article.html", target="_blank") CONTACT US
-
-    h2
+    h1 
       | Inscription
 
     form(action='/submit-register', method='post', class="form") 
