@@ -1,10 +1,19 @@
 import express, { Request, Response } from 'express';
+import * as path from 'path';
 
 const app = express();
 const port = 3000;
 
-app.get('/', (req: Request, res: Response) => {
-  res.send('final teste445456465ege!!');
+// Définit le dossier "views" pour les fichiers Pug
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'pug');
+
+// Définit le dossier "styles" pour les fichiers CSS
+app.use('/styles', express.static(path.join(__dirname, 'styles')));
+
+app.get('/register', (req: Request, res: Response) => {
+  // Utilise le nom du fichier Pug sans extension
+  res.render('register', { pageTitle: 'register' });
 });
 
 app.listen(port, () => {

@@ -1,0 +1,53 @@
+// views/register.pug
+
+doctype html
+html
+  head
+    title= "MOVIREC"
+    meta(charset='UTF-8')
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    block styles
+      link(rel="stylesheet", type="text/css", href="./styles/header.css")
+      link(rel="stylesheet", type="text/css", href="./styles/register.css")  
+  body
+    header(class='header')
+      div(class='title')
+        img(class='img',src='./styles/image/film.png', alt='Logo')
+        h1 MOVIREC
+      
+        
+      a.link_in(href="Sign.html", target="_blank") Sign in
+      a.link_up(href="login.html", target="_blank") Sign up
+
+      hr
+
+    nav
+      a(href="article.html", target="_blank") ARTICLES 
+      a(href="article.html", target="_blank")  MOVIES REVIEWS
+      a(href="article.html", target="_blank") INTERVIEWS
+      a(href="article.html", target="_blank") CONTEST
+      a(href="article.html", target="_blank") CONTACT US
+
+    h2
+      | Inscription
+
+    form(action='/submit-register', method='post', class="form") 
+      label(for="pseudo") Pseudo :
+      input(type="text", placeholder="Entrez votre pseudo", name="pseudo", class="pseudo", required)
+
+      label(for="Nom") Nom :
+      input(type="text", placeholder="Entrez votre nom", name="Nom", id="surname", required)
+
+      label(for="Prénom") Prénom:
+      input(type="text", placeholder="Entrez votre prénom", name="Prénom", id="lastname", required)
+
+      label(for="e-mail") Email:
+      input(type="email", placeholder="Entrez votre e-mail", name="e-mail", id="mail", required)
+
+      label(for="mot de passe") Mot de passe:
+      input(type="password", placeholder="Entrez votre mot de passe", name="mot de passe", id="password", required)
+
+      input(type="submit", value="Submit")
+
+    p 
+      | Si vous êtes déjà inscrit(e), veuillez cliquer sur Sign up.
