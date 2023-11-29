@@ -58,14 +58,9 @@ app.get('/register', (req: Request, res: Response) => {
   res.render('register', { pageTitle: 'register' });
 });
 
-app.get('/home', (req: Request, res: Response) => {
-  // Utilisez le nom du fichier Pug sans extension
-  res.render('home', { pageTitle: 'home' });
-});
-
 app.get('/login', (req: Request, res: Response) => {
   // Utilisez le nom du fichier Pug sans extension
-  res.render('login', { pageTitle: 'login', error: '' });
+  res.render('login', { pageTitle: 'login' });
 });
 
 app.listen(port, () => {
