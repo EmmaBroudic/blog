@@ -44,11 +44,11 @@ async function insertUserData(User_Surname: string, User_First_name: string, Use
 }
 
 // Définissez le dossier "views" pour les fichiers Pug
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, '../views'));
 app.set('view engine', 'pug');
 
 // Définissez le dossier "styles" pour les fichiers CSS
-app.use('/styles', express.static(path.join(__dirname, 'styles')));
+app.use('/styles', express.static(path.join(__dirname, '../styles')));
 
 // Utilisez bodyParser pour analyser les données du formulaire
 app.use(bodyParser.urlencoded({ extended: true }));
