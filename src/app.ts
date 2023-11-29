@@ -58,6 +58,11 @@ app.get('/register', (req: Request, res: Response) => {
   res.render('register', { pageTitle: 'register' });
 });
 
+app.get('/login', (req: Request, res: Response) => {
+  // Utilisez le nom du fichier Pug sans extension
+  res.render('login', { pageTitle: 'login' });
+});
+
 app.listen(port, () => {
   console.log(`Server is running at http://localhost:${port}`);
 });
