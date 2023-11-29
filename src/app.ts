@@ -6,15 +6,15 @@ import * as path from 'path';
 const app = express();
 const port = 3000;
 
-
-// Définit le dossier "views" pour les fichiers Pug
+// Définissez le dossier "views" pour les fichiers Pug
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
-// Définit le dossier "styles" pour les fichiers CSS
+// Définissez le dossier "styles" pour les fichiers CSS
 app.use('/styles', express.static(path.join(__dirname, 'styles')));
 
 app.get('/register', (req: Request, res: Response) => {
+  // Utilisez le nom du fichier Pug sans extension
   res.render('register', { pageTitle: 'register' });
 });
 
