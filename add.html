@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>MOVIREC</title>
     <link rel="icon" type="icon" href="src/image/cinema.png">
-    <link rel="stylesheet" href="movirec.css">
-</head>
+    <link rel="stylesheet" href="login.css">
+    <script>
+        function checkAuthentication() {
+            
+            const userLoggedIn = true; 
 
-<body>
+            if (!userLoggedIn) {
+                
+                window.location.href = 'login.html';
+            }
+        }
+    </script>
+</head>
+<body onload="checkAuthentication()">
+
     <header>
         <div id="entete">
             <img src="src/image/film.png" alt="logo">
@@ -28,39 +37,21 @@
             <a style="text-decoration: none;" href="contact.html" target="-blank">CONTACT US</a>
         </nav>
     </header>
+    <fieldset>
+        <form>
 
-    <section>
-        <h2>Lorem ipsum quo doloremque</h2>
+            <h1>Nouvel article</h1>
 
-        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Optio explicabo quibusdam placeat alias, id nobis deserunt
-            quod nemo provident perferendis. Voluptas tempore veritatis,
-            inventore error aliquam dolorem maxime nostrum consequatur?</P>
+            <label for="Nom de l'article">Nom de l'article</label><input type="text">
+            <textarea rows="20" cols="200">Tapez votre texte ici s'il vous plaît</textarea>
+            <input class="submit" type="submit" value="Soumettre">
+            <input class="cancel" type="button" value="Annuler">
 
-    </section>
+            <p>Si vous n'êtes pas encore inscrit(e), veuillez cliquer sur Sign in.</p>
 
-    <hr>
-    <section>
-        <h2>Lorem architecto dolorem</h2>
-    </section>
+        </form>
+    </fieldset>
 
-    <hr>
-    <aside>
-        <h3>Lorem ipsum</h3>
-        <p>Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Nihil odio iusto doloribus
-            optio cumque tenetur ad. Placeat ex fuga nisi.</p>
-
-        <h3>lorem ipsum</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Quibusdam accusamus fugiat ad, modi exercitationem
-            corporis quam ullam illo, eligendi maxime sed est
-            necessitatibus delectus minima magnam laboriosam
-            mollitia?</p>
-
-    </aside>
-
-    
     <footer>
 
         <div class="basdepage">
@@ -75,7 +66,6 @@
         </div>
 
     </footer>
-
+    
 </body>
-
 </html>
