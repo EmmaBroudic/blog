@@ -5,9 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MOVIREC</title>
     <link rel="icon" type="icon" href="src/image/cinema.png">
-    <link rel="stylesheet" href="article.css">
+    <link rel="stylesheet" href="login.css">
+    <script>
+        function checkAuthentication() {
+            
+            const userLoggedIn = true; 
+
+            if (!userLoggedIn) {
+                
+                window.location.href = 'login.html';
+            }
+        }
+    </script>
 </head>
-<body>
+<body onload="checkAuthentication()">
+
     <header>
         <div id="entete">
             <img src="src/image/film.png" alt="logo">
@@ -25,27 +37,20 @@
             <a style="text-decoration: none;" href="contact.html" target="-blank">CONTACT US</a>
         </nav>
     </header>
-    <article class="margin">
+    <fieldset>
+        <form>
 
-        <h2>John WICK</h2>
+            <h1>Nouvel article</h1>
 
-        <img src="src/image/john.jpg">
+            <label for="Nom de l'article">Nom de l'article</label><input type="text">
+            <textarea rows="20" cols="200">Tapez votre texte ici s'il vous plaît</textarea>
+            <input class="submit" type="submit" value="Soumettre">
+            <input class="cancel" type="button" value="Annuler">
 
-        <div>
-        <h4>Description & résumé du film</h4>
-        </div>
+            <p>Si vous n'êtes pas encore inscrit(e), veuillez cliquer sur Sign in.</p>
 
-        <div id="preline">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-            Est, voluptate possimus in ipsa eligendi facilis optio illum 
-            enim qui ratione et accusamus pariatur recusandae
-             vitae quisquam vel culpa quidem molestiae.</p>
-        </div>   
-
-        <div>
-        <textarea name="textarea" row="300" cols="50">Vos commentaires ici !</textarea>
-        </div>
-    </article>
+        </form>
+    </fieldset>
 
     <footer>
 
