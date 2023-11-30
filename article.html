@@ -5,23 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MOVIREC</title>
     <link rel="icon" type="icon" href="src/image/cinema.png">
+    <link rel="stylesheet" href="article.css">
 </head>
 <body>
-    <article>
+    <header>
+        <div id="entete">
+            <img src="src/image/film.png" alt="logo">
+            <h1>MOVIREC</h1>
+            <a class="link first" href="register.html" target="_blank">Sign in</a>
+            <a class="link second" href="login.html" target="_blank">Sign up</a>
+        </div>
+        
 
-        <h2>Titre film</h2>
+        <nav>
+            <a style="text-decoration: none;" href="article.html" target="_blank">ARTICLES</a>
+            <a style="text-decoration: none;" href="movies.html" target="_blank">MOVIES REVIEWS</a>
+            <a style="text-decoration: none;" href="interview.html" target="_blank">INTERVIEWS</a>
+            <a style="text-decoration: none;" href="contest.html" target="_blank">CONTEST</a>
+            <a style="text-decoration: none;" href="contact.html" target="-blank">CONTACT US</a>
+        </nav>
+    </header>
+    <article class="margin">
+
+        <h2>John WICK</h2>
+
+        <img src="src/image/john.jpg">
 
         <div>
-        <p>Description & résumé du film</p>
+        <h4>Description & résumé du film</h4>
         </div>
 
-        <div>
+        <div id="preline">
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
             Est, voluptate possimus in ipsa eligendi facilis optio illum 
             enim qui ratione et accusamus pariatur recusandae
              vitae quisquam vel culpa quidem molestiae.</p>
         </div>   
+
+        <div>
+        <textarea name="textarea" row="300" cols="50">Vos commentaires ici !</textarea>
+        </div>
     </article>
+
+    <footer>
+
+        <div class="basdepage">
+            <p>ABOUT US</p>
+        </div>
+
+        <div class="basdepage">
+            <P>NEWSLETTERS</P>
+        </div>
+        <div class="copyright">
+            &copy;Movirec
+        </div>
+
+    </footer>
     
 </body>
 </html>

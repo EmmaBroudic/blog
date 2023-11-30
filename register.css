@@ -1,0 +1,84 @@
+h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+label {
+    display: flex;
+    flex-direction:column-reverse;
+    align-items: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+input {
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    left: 470px;
+    text-align: center;
+    background-color: #74bcc7;
+    padding-top: 10px;
+    width: 250px;
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.boutton {
+    display: flex;
+    flex-direction: column-reverse;
+    bottom: revert; 
+    width: 90px; 
+    text-align: center;
+    border: 3px solid;
+    border-color: #74bcc7;
+    margin-top: 20px; 
+    font-weight: bold;
+    font-size: 15px;
+    color: black;
+}
+
+fieldset {
+    background-color: #CC4040;
+    padding-bottom: 20px;
+    border: #CC4040;
+}
+
+p {
+    text-align: center;
+    margin-top: 40px;
+    color: white;
+}
+.basdepage {
+    display: flex;
+    flex-direction: column; /* Change to column direction /
+    justify-content: space-between;
+
+    color: white;
+    height: auto; / Set height to auto /
+}
+
+
+
+.copyright {
+    text-align: center; / Center align the copyright text */
+    margin-top: center;
+
+}
+
+.copyright {
+    text-align: center; /* Center align the copyright text */
+    margin-top: center;
+}
+
+footer {
+    background-color: #CC4040;
+    padding:40px 10px;
+    color: white;
+}

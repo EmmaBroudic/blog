@@ -1,0 +1,40 @@
+doctype html
+html(lang='fr')
+  head
+    meta(charset='UTF-8')
+    |     
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    |     
+    title MOVIREC
+    |     
+    link(rel='icon', type='icon', href='src/image/cinema.png')
+    |     
+    link(rel='stylesheet', href='login.css')
+  body
+    fieldset
+      form
+        h1 Sign up
+        |             
+        label(for='Identifiant') Identifiant
+        input#Identifiant(type='email', placeholder='@email', name='Identifiant')
+        |             
+        p Identifiant oubli&eacute; ?
+        |             
+        label(for='Mot de passe') Mot de passe
+        input(type='password', placeholder='Mot de passe', name='Mot de passe', id='Mot de passe')
+        |             
+        p Mot de passe oubli&eacute; ?
+        |             
+        input.submit(type='submit', value='Soumettre')
+        |             
+        p Si vous n&apos;&ecirc;tes pas encore inscrit(e), veuillez cliquer sur Sign in.
+    |     
+    footer
+      .basdepage
+        p ABOUT US
+      |         
+      .basdepage
+        p NEWSLETTERS
+      |         
+      .copyright
+        | &copy;Movirec
