@@ -1,43 +1,43 @@
-body {
-    margin: 0px;
-}
+    body {
+        margin: 0px;
+    }
 
-.margin {
-    margin: 5px;
-}
+    .margin {
+        margin: 5px;
+    }
 
-img {
-    width: 200px;
-}
+    img {
+        width: 200px;
+    }
 
-#preline {
-    white-space: pre-line;
-}
+    #preline {
+        white-space: pre-line;
+    }
 
-.basdepage {
-    display: flex;
-    flex-direction: column; /* Change to column direction /
-    justify-content: space-between;
+    .basdepage {
+        display: flex;
+        flex-direction: column; /* Change to column direction /
+        justify-content: space-between;
 
-    color: white;
-    height: auto; / Set height to auto /
-}
+        color: white;
+        height: auto; / Set height to auto /
+    }
 
 
 
-.copyright {
-    text-align: center; / Center align the copyright text */
-    margin-top: center;
+    .copyright {
+        text-align: center; / Center align the copyright text */
+        margin-top: center;
 
-}
+    }
 
-.copyright {
-    text-align: center; /* Center align the copyright text */
-    margin-top: center;
-}
+    .copyright {
+        text-align: center; /* Center align the copyright text */
+        margin-top: center;
+    }
 
-footer {
-    background-color: #CC4040;
-    padding:40px 10px;
-    color: white;
-}
+    footer {
+        background-color: #CC4040;
+        padding:40px 10px;
+        color: white;
+    }

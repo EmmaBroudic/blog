@@ -78,9 +78,9 @@ app.get('/login', (req: Request, res: Response) => {
   res.render('login')
 })
 
-app.get('/movirec', (req: Request, res: Response) => {
+app.get('/home', (req: Request, res: Response) => {
   
-  res.render('movirec')
+  res.render('home')
 })
 
 app.listen(port, () => {

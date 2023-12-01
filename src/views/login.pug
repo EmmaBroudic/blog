@@ -2,36 +2,29 @@ doctype html
 html(lang='fr')
   head
     meta(charset='UTF-8')
-    |     
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     |     
     title MOVIREC
     |     
-    link(rel='icon', type='icon', href='src/styles/image/cinema.png')
-    |     
-    link(rel='stylesheet', href='login.css')
+    link(rel='icon', type='icon', href='src/image/cinema.png')
+    block styles
+      link(rel="stylesheet", type="text/css", href="./styles/header.css")
+      link(rel="stylesheet", type="text/css", href="./styles/login.css")
+  
   body
     header
       #entete
         img(src='src/styles/image/film.png', alt='logo')
-        |             
         h1 MOVIREC
-        |             
-        a.link.first(href='register.html', target='_blank') Sign in
-        |             
-        a.link.second(href='login.html', target='_blank') Sign up
-      |         
-      |         
-      nav
-        a(style='text-decoration: none;', href='article.html', target='_blank') ARTICLES
-        |             
-        a(style='text-decoration: none;', href='movies.html', target='_blank') MOVIES REVIEWS
-        |             
-        a(style='text-decoration: none;', href='interview.html', target='_blank') INTERVIEWS
-        |             
-        a(style='text-decoration: none;', href='contest.html', target='_blank') CONTEST
-        |             
-        a(style='text-decoration: none;', href='contact.html', target='-blank') CONTACT US
+        a.link.first(href='register', target='_blank') connection
+        a.link.second(href='login', target='_blank') enregistrement
+        a.link(href='add', target='_blank') ajouter article
+    nav
+      a(href="article", target="_blank") ARTICLES 
+      a(href="home", target="_blank")  MOVIES REVIEWS
+      a(href="home", target="_blank") INTERVIEWS
+      a(href="home", target="_blank") CONTEST
+      a(href="home", target="_blank") CONTACT US
     |     
     fieldset
       form

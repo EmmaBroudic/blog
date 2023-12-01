@@ -7,21 +7,18 @@ html(lang='fr')
     |     
     title MOVIREC
     |     
-    link(rel='icon', type='icon', href='src/styles/image/cinema.png')
-    |     
-    link(rel='stylesheet', href='movirec.css')
+    link(rel='icon', type='icon', href='src/image/cinema.png')
+    block styles
+      link(rel="stylesheet", type="text/css", href="./styles/header.css")
+      link(rel="stylesheet", type="text/css", href="./styles/home.css")
   body
-    header
-      #entete
-        img(src='src/styles/image/film.png', alt='logo')
-        |             
+    header(class='header')
+      div(class='title')
+        img(class='img',src='./styles/image/film.png', alt='Logo')
         h1 MOVIREC
-        |             
-        a.link.first(href='register.html', target='_blank') Sign in
-        |             
-        a.link.second(href='login.html', target='_blank') Sign up
-        |
-        a.link(href='add.html', target='_blank') Add Article
+      a.link_in(href="login", target="_blank") connection
+      a.link_up(href="register", target="_blank") enregistrement
+      a.link(href='add', target='_blank') ajouter article
       |         
       |         
       nav
