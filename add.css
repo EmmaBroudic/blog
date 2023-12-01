@@ -1,0 +1,103 @@
+body {
+    margin: 0px;
+}
+
+#entete {
+    display: flex;
+    flex-direction: row;
+    padding: 40px 10px;
+    background-color: #CC4040;
+}
+
+img {
+    border-radius: 70px;
+    width: 150px;
+    height: 100px;
+    margin-top: 10px;
+}
+
+nav {
+    display: inline-flex;
+    position: relative;
+    font-weight: bold;
+    text-indent: 100px;
+    background-color: #74BCC7;
+    color: black;
+    padding-right: 200px;
+}
+
+h1 {
+    font-size: 65px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    left: 30px;
+    bottom: 30px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.link {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column-reverse;
+    bottom: revert;
+    margin-top: 110px;
+    position: relative;
+    left: 400px;
+    text-indent: 50px;
+    white-space: none;
+}
+
+.link.first,
+.link.second {
+    background-color: #74BCC7;
+    padding: 0px;
+    border-radius: 10px;
+    color: black; /* Text color */
+    font-weight: bold;
+
+}
+.link.first {
+    margin-right: 10px
+    
+}
+
+.link.second {
+    margin-left: 10px;
+
+}
+
+
+form {
+    padding-top: 20px;
+    padding-bottom: 124px;
+}
+
+.basdepage {
+    display: flex;
+    flex-direction: column; /* Change to column direction /
+    justify-content: space-between;
+
+    color: white;
+    height: auto; / Set height to auto /
+}
+
+
+
+.copyright {
+    text-align: center; / Center align the copyright text */
+    margin-top: center;
+
+}
+
+.copyright {
+    text-align: center; /* Center align the copyright text */
+    margin-top: center;
+}
+
+footer {
+    background-color: #CC4040;
+    padding:40px 10px;
+    color: white;
+}
