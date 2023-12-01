@@ -33,7 +33,7 @@ async function insertUserData(User_Surname: string, User_First_name: string, Use
     // Exécution de la requête d'insertion
     await client.query(insertQuery, values);
 
-    console.log('Nouvel créé avec succès');
+    console.log('Nouvel enregistrement créé avec succès');
 
   } catch (error) {
     console.error('Erreur lors de l\'insertion des données :', error);
@@ -74,7 +74,7 @@ app.listen(port, () => {
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.post('/submit-register', async (req, res) => {
+app.post('/register', async (req, res) => {
   const client = new Client(dbConfig);
 
   try {
@@ -99,7 +99,7 @@ app.post('/submit-register', async (req, res) => {
     await client.query(insertQuery, values);
 
     console.log('Nouvel enregistrement créé avec succès');
-    res.send('Nouvel enregistrement créé avec succès');
+    res.redirect('/home');
 
   } catch (error) {
     console.error('Erreur lors de l\'insertion des données :', error);
