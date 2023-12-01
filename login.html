@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MOVIREC</title>
     <link rel="icon" type="icon" href="src/styles/image/cinema.png">
-    <link rel="stylesheet" href="article.css">
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
     <header>
@@ -25,27 +25,21 @@
             <a style="text-decoration: none;" href="contact.html" target="-blank">CONTACT US</a>
         </nav>
     </header>
-    <article class="margin">
+    <fieldset>
+        <form>
 
-        <h2>John WICK</h2>
+            <h1>Sign up</h1>
 
-        <img src="src/image/john.jpg">
+            <label for="Identifiant">Identifiant</label><input type="email" placeholder="@email" name="Identifiant" id="Identifiant">
+            <p>Identifiant oublié ?</p>
+            <label for="Mot de passe">Mot de passe</label><input type="password" placeholder="Mot de passe" name="Mot de passe" id="Mot de passe">
+            <p>Mot de passe oublié ?</p>
+            <input class="submit" type="submit" value="Soumettre">
 
-        <div>
-        <h4>Description & résumé du film</h4>
-        </div>
+            <p>Si vous n'êtes pas encore inscrit(e), veuillez cliquer sur Sign in.</p>
 
-        <div id="preline">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-            Est, voluptate possimus in ipsa eligendi facilis optio illum 
-            enim qui ratione et accusamus pariatur recusandae
-             vitae quisquam vel culpa quidem molestiae.</p>
-        </div>   
-
-        <div>
-        <textarea name="textarea" row="300" cols="50">Vos commentaires ici !</textarea>
-        </div>
-    </article>
+        </form>
+    </fieldset>
 
     <footer>
 

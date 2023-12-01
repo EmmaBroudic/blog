@@ -2,43 +2,62 @@ doctype html
 html(lang='fr')
   head
     meta(charset='UTF-8')
+    |     
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    |     
     title MOVIREC
+    |     
     link(rel='icon', type='icon', href='src/styles/image/cinema.png')
-    link(rel='stylesheet', type='text/css', href='http://localhost:3000/add.css')
-  
+    |     
+    link(rel='stylesheet', href='article.css')
   body
     header
       #entete
         img(src='src/styles/image/film.png', alt='logo')
+        |             
         h1 MOVIREC
+        |             
         a.link.first(href='register.html', target='_blank') Sign in
+        |             
         a.link.second(href='login.html', target='_blank') Sign up
-        a.link(href='add.html', target='_blank') Add Article
+      |         
+      |         
       nav
         a(style='text-decoration: none;', href='article.html', target='_blank') ARTICLES
+        |             
         a(style='text-decoration: none;', href='movies.html', target='_blank') MOVIES REVIEWS
+        |             
         a(style='text-decoration: none;', href='interview.html', target='_blank') INTERVIEWS
+        |             
         a(style='text-decoration: none;', href='contest.html', target='_blank') CONTEST
+        |             
         a(style='text-decoration: none;', href='contact.html', target='-blank') CONTACT US
-    
-    fieldset
-      form(method='POST', action='/add')
-        h1 Nouvel article
-        label(for="Nom de l'article") Nom de l'article
-        input(type='text', name='articleName')
-        
-        label(for='Tapez votre texte ici') Tapez votre texte ici s'il vous plaît
-        textarea(name='articleText', rows='20', cols='50', style='margin-bottom: 10px;')
-        
-        input.submit(type='submit', value='Soumettre')
-        input.cancel(type='button', value='Annuler')
-        
-        p Si vous n'êtes pas encore inscrit(e), veuillez cliquer sur Sign in.
-
+    |     
+    article.margin
+      h2 John WICK
+      |         
+      img(src='src/styles/image/john.jpg')
+      |         
+      div
+        h4 Description &amp; r&eacute;sum&eacute; du film
+      |         
+      #preline
+        p
+          | Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          | Est, voluptate possimus in ipsa eligendi facilis optio illum
+          | enim qui ratione et accusamus pariatur recusandae
+          | vitae quisquam vel culpa quidem molestiae.
+      |    
+      |         
+      div
+        textarea(name='textarea', row='300', cols='50') Vos commentaires ici !
+    |     
     footer
       .basdepage
         p ABOUT US
+      |         
       .basdepage
         p NEWSLETTERS
-      .copyright &copy;Movirec
+      |         
+      .copyright
+        | &copy;Movirec
