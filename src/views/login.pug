@@ -2,49 +2,61 @@ doctype html
 html(lang='fr')
   head
     meta(charset='UTF-8')
+    |     
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    |     
     title MOVIREC
-    link(rel='icon', type='icon', href='src/image/cinema.png')
-    block styles
-      link(rel="stylesheet", type="text/css", href="./styles/header.css")
-      link(rel="stylesheet", type="text/css", href="./styles/login.css")   
+    |     
+    link(rel='icon', type='icon', href='src/styles/image/cinema.png')
+    |     
+    link(rel='stylesheet', href='login.css')
   body
-    header(class='header')
-      div(class='title')
-        img(class='img',src='./styles/image/film.png', alt='Logo')
+    header
+      #entete
+        img(src='src/styles/image/film.png', alt='logo')
+        |             
         h1 MOVIREC
-      a.link_in(href="login", target="_blank") connection
-      a.link_up(href="register", target="_blank") enregistrement
-
-      hr
-
-    nav
-      a(href="home", target="_blank") ARTICLES 
-      a(href="home", target="_blank")  MOVIES REVIEWS
-      a(href="home", target="_blank") INTERVIEWS
-      a(href="home", target="_blank") CONTEST
-      a(href="home", target="_blank") CONTACT US
+        |             
+        a.link.first(href='register.html', target='_blank') Sign in
+        |             
+        a.link.second(href='login.html', target='_blank') Sign up
+      |         
+      |         
+      nav
+        a(style='text-decoration: none;', href='article.html', target='_blank') ARTICLES
+        |             
+        a(style='text-decoration: none;', href='movies.html', target='_blank') MOVIES REVIEWS
+        |             
+        a(style='text-decoration: none;', href='interview.html', target='_blank') INTERVIEWS
+        |             
+        a(style='text-decoration: none;', href='contest.html', target='_blank') CONTEST
+        |             
+        a(style='text-decoration: none;', href='contact.html', target='-blank') CONTACT US
+    |     
     fieldset
-      form(action='/login', method='post') 
-        h1 Connection
-
-        //- Affichage du message d'erreur
-        if error
-          p(style='color: white;')= error
-
-        label(for='User_Email') Entrez votre email
-        input(type='email', placeholder='@email', name='User_Email') 
-        p Identifiant oublié ?
-        label(for='User_Password') Entrez votre mot de passe
-        input(type='password', placeholder='Mot de passe', name='User_Password') 
-        p Mot de passe oublié ?
+      form
+        h1 Sign up
+        |             
+        label(for='Identifiant') Identifiant
+        input#Identifiant(type='email', placeholder='@email', name='Identifiant')
+        |             
+        p Identifiant oubli&eacute; ?
+        |             
+        label(for='Mot de passe') Mot de passe
+        input(type='password', placeholder='Mot de passe', name='Mot de passe', id='Mot de passe')
+        |             
+        p Mot de passe oubli&eacute; ?
+        |             
         input.submit(type='submit', value='Soumettre')
-        p Si vous n'êtes pas encore inscrit(e), veuillez cliquer sur Sign in.
+        |             
+        p Si vous n&apos;&ecirc;tes pas encore inscrit(e), veuillez cliquer sur Sign in.
     |     
     footer
       .basdepage
         p ABOUT US
+      |         
       .basdepage
         p NEWSLETTERS
+      |         
       .copyright
         | &copy;Movirec

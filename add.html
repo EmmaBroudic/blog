@@ -1,71 +1,40 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MOVIREC</title>
-    <link rel="icon" type="icon" href="src/image/cinema.png">
-    <link rel="stylesheet" href="login.css">
-    <script>
-        function checkAuthentication() {
-            
-            const userLoggedIn = true; 
+    <link rel="icon" type="icon" href="src/styles/image/cinema.png">
+    <link rel="stylesheet" type="text/css" href="http://localhost:3000/add.css">
 
-            if (!userLoggedIn) {
-                
-                window.location.href = 'login.html';
-            }
-        }
-    </script>
-</head>
-<body onload="checkAuthentication()">
-
+  </head>
+  <body>
     <header>
-        <div id="entete">
-            <img src="src/image/film.png" alt="logo">
-            <h1>MOVIREC</h1>
-            <a class="link first" href="register.html" target="_blank">Sign in</a>
-            <a class="link second" href="login.html" target="_blank">Sign up</a>
-        </div>
-        
-
-        <nav>
-            <a style="text-decoration: none;" href="article.html" target="_blank">ARTICLES</a>
-            <a style="text-decoration: none;" href="movies.html" target="_blank">MOVIES REVIEWS</a>
-            <a style="text-decoration: none;" href="interview.html" target="_blank">INTERVIEWS</a>
-            <a style="text-decoration: none;" href="contest.html" target="_blank">CONTEST</a>
-            <a style="text-decoration: none;" href="contact.html" target="-blank">CONTACT US</a>
-        </nav>
+      <div id="entete"><img src="src/styles/image/film.png" alt="logo">
+        <h1>MOVIREC</h1><a class="link first" href="register.html" target="_blank">Sign in</a><a class="link second" href="login.html" target="_blank">Sign up</a>
+      </div>
+      <nav><a style="text-decoration: none;" href="article.html" target="_blank">ARTICLES</a><a style="text-decoration: none;" href="movies.html" target="_blank">MOVIES REVIEWS</a><a style="text-decoration: none;" href="interview.html" target="_blank">INTERVIEWS</a><a style="text-decoration: none;" href="contest.html" target="_blank">CONTEST</a><a style="text-decoration: none;" href="contact.html" target="-blank">CONTACT US</a></nav>
     </header>
     <fieldset>
-        <form>
-
-            <h1>Nouvel article</h1>
-
-            <label for="Nom de l'article">Nom de l'article</label><input type="text">
-            <textarea rows="20" cols="200">Tapez votre texte ici s'il vous plaît</textarea>
-            <input class="submit" type="submit" value="Soumettre">
-            <input class="cancel" type="button" value="Annuler">
-
-            <p>Si vous n'êtes pas encore inscrit(e), veuillez cliquer sur Sign in.</p>
-
-        </form>
+      <form method="POST">
+        <h1>Nouvel article</h1>
+        <label for="Nom de l'article">Nom de l'article</label>
+        <input type="text">
+        <label for="Tapez votre texte ici">Tapez votre texte ici s'il vous plaît</label>
+        <textarea name="articleText" rows="20" cols="50" style="margin-bottom: 10px;"></textarea>
+        <input class="submit" type="submit" value="Soumettre">
+        <input class="cancel" type="button" value="Annuler">
+        <p>Si vous n'êtes pas encore inscrit(e), veuillez cliquer sur Sign in.</p>
+      </form>
     </fieldset>
-
     <footer>
-
-        <div class="basdepage">
-            <p>ABOUT US</p>
-        </div>
-
-        <div class="basdepage">
-            <P>NEWSLETTERS</P>
-        </div>
-        <div class="copyright">
-            &copy;Movirec
-        </div>
-
+      <div class="basdepage">
+        <p>ABOUT US</p>
+      </div>
+      <div class="basdepage">
+        <p>NEWSLETTERS</p>
+      </div>
+      <div class="copyright">&copy;Movirec</div>
     </footer>
-    
-</body>
+  </body>
 </html>

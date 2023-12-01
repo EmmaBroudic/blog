@@ -1,20 +1,21 @@
-// views/register.pug
-
 doctype html
-html
+html(lang='fr')
   head
-    title= "MOVIREC"
     meta(charset='UTF-8')
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     block styles
       link(rel="stylesheet", type="text/css", href="./styles/header.css")
       link(rel="stylesheet", type="text/css", href="./styles/register.css")  
-      
+    title MOVIREC     
+    link(rel='icon', type='icon', href='src/styles/image/cinema.png')   
+    link(rel='stylesheet', href='register.css')
   body
-    header(class='header')
-      div(class='title')
-        img(class='img',src='./styles/image/film.png', alt='Logo')
+    header
+      #entete
+        img(src='src/styles/image/film.png', alt='logo')
+        |             
         h1 MOVIREC
+<<<<<<< HEAD
       a.link_in(href="login", target="_blank") connection
       a.link_up(href="register", target="_blank") enregistrement
 
@@ -49,4 +50,13 @@ html
       input(type="submit", value="Submit")
 
     p 
-      | Si vous êtes déjà inscrit(e), veuillez cliquer sur Sign up.
+      | Si vous êtes déjà inscrit(e), veuillez cliquer sur Sign up.           
+    footer
+      .basdepage
+        p ABOUT US
+      |             
+      .basdepage
+        p NEWSLETTERS
+      |             
+      .copyright
+        | &copy;Movirec
