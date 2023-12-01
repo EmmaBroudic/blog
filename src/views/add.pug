@@ -1,0 +1,36 @@
+doctype html
+html(lang='fr')
+  head
+    meta(charset='UTF-8')
+    |     
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    |     
+    title MOVIREC
+    |     
+    link(rel='icon', type='icon', href='src/image/cinema.png')
+    |     
+ 
+  body
+    form
+      h1 Nouvel article
+      |             
+      label(for="Nom de l'article") Nom de l&apos;article
+      input(type='text')
+      |             
+      label(for='Tapez votre article ici') Article
+      input(type='text')
+      |             
+      input.submit(type='submit', value='Soumettre')
+      |             
+      input.cancel(type='button', value='Annuler')
+      |             
+      p Si vous n&apos;&ecirc;tes pas encore inscrit(e), veuillez cliquer sur Sign in.   
+    footer
+      .basdepage
+        p ABOUT US
+      |         
+      .basdepage
+        p NEWSLETTERS
+      |         
+      .copyright
+        | &copy;Movirec
