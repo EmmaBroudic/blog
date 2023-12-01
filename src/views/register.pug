@@ -9,28 +9,28 @@ html
     block styles
       link(rel="stylesheet", type="text/css", href="./styles/header.css")
       link(rel="stylesheet", type="text/css", href="./styles/register.css")  
-      link(rel='stylesheet', type='text/css', href="./styles/register.css")  
+      
   body
     header(class='header')
       div(class='title')
         img(class='img',src='./styles/image/film.png', alt='Logo')
         h1 MOVIREC
-      a.link_in(href="Sign.html", target="_blank") Sign in
-      a.link_up(href="login.html", target="_blank") Sign up
+      a.link_in(href="login", target="_blank") connection
+      a.link_up(href="register", target="_blank") enregistrement
 
       hr
 
     nav
-      a(href="article.html", target="_blank") ARTICLES 
-      a(href="article.html", target="_blank")  MOVIES REVIEWS
-      a(href="article.html", target="_blank") INTERVIEWS
-      a(href="article.html", target="_blank") CONTEST
-      a(href="article.html", target="_blank") CONTACT US
+      a(href="home", target="_blank") ARTICLES 
+      a(href="home", target="_blank")  MOVIES REVIEWS
+      a(href="home", target="_blank") INTERVIEWS
+      a(href="home", target="_blank") CONTEST
+      a(href="home", target="_blank") CONTACT US
   
     h1 
       | Inscription
 
-    form(action='/submit-register', method='post', class="form") 
+    form(action='/register', method='post', class="form") 
       label(for="User_Nickname") Pseudo :
       input(type="text", placeholder="Entrez votre pseudo", name="User_Nickname", class="pseudo", required)
 
